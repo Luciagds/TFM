@@ -14,9 +14,9 @@ The code is divided in two folders. The folder `Missing values imputation` inclu
 ### Dependencies
 
 * R (4.0.3)
-* R libraries: dplyr (1.0.4), tidyverse (1.3.0), plyr (1.8.6), naniar (0.6.0), xts (0.12.1), fpp2 (2.4), cowplot (1.1.1), reshape2 (1.4.4), data.table (1.13.6), imputeTS (3.2), worldmet (0.9.2), moments (0.14), ggplot2 (3.3.3)
+* R libraries: `dplyr` (1.0.4), `tidyverse` (1.3.0), `plyr` (1.8.6), `naniar` (0.6.0), `xts` (0.12.1), `fpp2` (2.4), `cowplot` (1.1.1), `reshape2` (1.4.4), `data.table` (1.13.6), `imputeTS` (3.2), `worldmet` (0.9.2), `moments` (0.14), `ggplot2` (3.3.3)
 * Python (3.8.5)
-* Python libraries: numpy (1.19.2), pandas (1.1.3), matplotlib (3.3.2), tensorflow (2.5.0), stellargraph (1.2.1), sklearn (0.23.2)
+* Python libraries: `numpy` (1.19.2), `pandas` (1.1.3), `matplotlib` (3.3.2), `tensorflow` (2.5.0), `stellargraph` (1.2.1), `sklearn` (0.23.2)
 * Anaconda (2020.11)
 
 ### Installing
