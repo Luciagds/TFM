@@ -7,7 +7,7 @@ This repository includes the main code required to replicate the experiments per
 
 This project’s experimental part focuses on forecasting the hourly mean air temperature of different regions throughout Spain. First, diverse datasets of climate features from observational stations in Spain were analyzed to obtain reliable data to perform the analysis. Second, preprocessing and cleaning methodologies were carried out to prepare the data for deep learning-based forecasting. Then, two novel networks were proposed for this task: a *Graph Convolutional Long Short Term Memory Network* (GCN-LSTM) that considersthe spatial location of the sites, and a *Multifactor Spatio-Temporal Correlation model based on aHybrid Convolutional Long Short Term Memory Network* (MFSTC-CNN-LSTM) that accounts for therelationship between air temperature and other climate parameters. Lastly, the performance of the different models was evaluated and compared with other proposals in the literature.
 
-The code is divided in two folders. The folder `Missing values imputation` includes an R code that loads NOAA data and imputes missing values using a user-defined function that computes the *Inverse Distance Weighting* (IDW) method, followed by either *Autoregressive Integrated Moving Average with Kalman Smoothing* (ARIMA) or *Moving Average* (MA) imputation. A statistical analysis is performed to select the optimal method: deterministic statistics and kernel density functions of the imputed data are compared with those of the raw data. The folder `Models` includes five Python codes for each of the studied models (LSTM, Stacked-LSTM, CNN-LSTM, GCN-LSTM, MFSTC-CNN-LSTM) that preprocesses the imputed data, trains the model and evaluates its performance. They hyperparameters to be tunned (`seq_len`, `units`) and modified (`pre_len`) are indictated in the notebooks.
+The code is divided in two folders. The folder `Missing values imputation` includes an R code that loads NOAA data and imputes missing values using a user-defined function that computes the *Inverse Distance Weighting* (IDW) method, followed by either *Autoregressive Integrated Moving Average with Kalman Smoothing* (ARIMA) or *Moving Average* (MA) imputation. A statistical analysis is performed to select the optimal method: deterministic statistics and kernel density functions of the imputed data are compared with those of the raw data. The folder `Models` includes five Python codes for each of the studied models (LSTM, Stacked-LSTM, CNN-LSTM, GCN-LSTM, MFSTC-CNN-LSTM) that preprocesses the imputed data, trains the model and evaluates its performance. 
 
 ## Getting Started
 
@@ -19,10 +19,9 @@ The code is divided in two folders. The folder `Missing values imputation` inclu
 * Python libraries: `numpy` (1.19.2), `pandas` (1.1.3), `matplotlib` (3.3.2), `tensorflow` (2.5.0), `stellargraph` (1.2.1), `sklearn` (0.23.2)
 * Anaconda (2020.11)
 
-### Installing
-
+### Executing program
+* The hyperparameters to be tunned (`seq_len`, `units`) and modified (`pre_len`) are indictated in the notebooks.
 * Notice that there are files to paths in your computer that must be changed to your desired destination.
-
 
 ## Authors
 
